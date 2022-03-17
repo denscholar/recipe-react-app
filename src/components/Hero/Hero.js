@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components';
 import Image from '../../assets/img1.jpg';
 import { Menu, FastFood, FoodBank } from '../icons/MenuIcons';
+// import { NavLink } from 'react-router-dom';
 
 const Wrapper = styled.div`
     padding: 0;
@@ -50,7 +51,9 @@ const Hero = () => {
     <Wrapper>
       <CircleWrapper>
         <Circle1>
+
           <Menu />
+
         </Circle1>
         <Circle1>
           <FastFood />
