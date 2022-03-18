@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components';
 import Image from '../../assets/img1.jpg';
-import { Menu, FastFood, FoodBank } from '../icons/MenuIcons';
+// import { Menu, FastFood, FoodBank } from '../icons/MenuIcons';
 // import { NavLink } from 'react-router-dom';
 
 const Wrapper = styled.div`
@@ -52,14 +52,14 @@ const Hero = () => {
       <CircleWrapper>
         <Circle1>
 
-          <Menu />
+          {/* <Menu /> */}
 
         </Circle1>
         <Circle1>
-          <FastFood />
+          {/* <FastFood /> */}
         </Circle1>
         <Circle1>
-          <FoodBank />
+          {/* <FoodBank /> */}
         </Circle1>
       </CircleWrapper>
       <BackgroundText>
