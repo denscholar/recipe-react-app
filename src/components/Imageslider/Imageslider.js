@@ -3,7 +3,6 @@ import { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/splide/dist/css/splide.min.css';
-// import { FreeBreakfast } from '@material-ui/icons';
 
 const Wrapper = styled.div`
     margin: 2rem 0;
@@ -41,11 +40,8 @@ const Gradient = styled.div`
     background: linear-gradient(rgba(0, 0, 0, 0), rgba(0,0,0,0.8));
 `
 const Imageslider = () => {
-    // const app_id = 'b20ec946'
 
     const [favourites, setFavourites] = useState([]);
-    // const api = 'https://api.edamam.com/api/recipes/v2';
-    // const api_key = '4454ea13e7e351266b62910122277c5f'
 
     const fetchData = async () => {
         const response = await fetch('https://api.edamam.com/api/recipes/v2?type=public&q=%22chicken%22%2C%20%22salad%22&app_id=5abb86d8&app_key=05efb931f11c66c1391a6bd02f9438d9');
@@ -67,13 +63,13 @@ const Imageslider = () => {
                     gap: '10px',
                     autoplay: true,
                 }}>
-                    {favourites.map((hits) => {
+                    {favourites.map((hit) => {
                         return (
                             <>
                                 <SplideSlide>
                                     <Card>
-                                        <Title>{hits.recipe.label}</Title>
-                                        <img src={hits.recipe.image} alt={hits.recipe.label} />
+                                        <Title>{hit.recipe.label}</Title>
+                                        <img src={hit.recipe.image} alt={hit.recipe.label} />
                                         <Gradient />
                                     </Card>
                                 </SplideSlide>

@@ -1,6 +1,7 @@
 import React from 'react';
 import Hero from '../../components/Hero/Hero';
 import Imageslider from '../../components/Imageslider/Imageslider';
+import RecipeList from '../../components/RecipeList/RecipeList';
 
 const Home = () => {  
   return (
@@ -8,6 +9,7 @@ const Home = () => {
         <Hero />
         <h1>Trending Recipes</h1>
         <Imageslider />
+        <RecipeList />
     </div>
   )
 }
